@@ -3,7 +3,7 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import Launches from './components/Launches';
 import './App.css';
-import logo from './spaceX_large.png';
+import logo from './logo_spacex.png';
 
 const client = new ApolloClient({
   uri: 'http://localhost:5000/graphql'
@@ -17,7 +17,7 @@ class App extends Component {
           <img
             src={logo}
             alt="SpaceX"
-            style={{ width: 300, display: 'block', margin: 'auto' }}
+            style={{ width: 400, display: 'block', margin: 'auto' }}
           />
           <Launches />
         </div>
